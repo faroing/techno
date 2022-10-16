@@ -52,7 +52,7 @@ const Login = (props) => {
         users = localStorage.getItem("users");
 
 
-        if (users.length > 0) {
+        if (users?.length > 0) {
             users = JSON.parse(users);
             for (const key in users) {
                 if (users[key].userName === userName && users[key].password === password) {
