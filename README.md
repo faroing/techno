@@ -38,6 +38,7 @@ Demostrar conocimientos  referentes al desarrollo web, uso de estilos maquetaci√
 
 You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
 
+
 # Manual de instalaci√≥n y despliegue
 
 
@@ -51,6 +52,11 @@ You can rename the current file by clicking the file name in the navigation bar 
 
 - Se debe subir la archivos contenidos en la carpeta configurada del servidor web
 
+## Contacto
+<img  target="_blank"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"  width="100">
+
+(www.linkedin.com/in/faroing)
+=======
 ## Contacto
 <img  target="_blank"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"  width="100">
 
