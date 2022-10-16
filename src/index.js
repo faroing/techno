@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Routing from './Routing';
 import ComicsProvider from './Context/ComicsContext';
 import { BrowserRouter } from "react-router-dom";
 

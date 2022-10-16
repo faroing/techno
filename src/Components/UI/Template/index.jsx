@@ -1,7 +1,7 @@
 import Header from "../Header";
 import Footer from '../Footer'
 import Routing from '../../../Routing';
-import css from './css/styles.module.css';
+
 import { ComicContext } from "../../../Context/ComicsContext";
 import { useContext } from "react";
 import Loading from "../Loading";

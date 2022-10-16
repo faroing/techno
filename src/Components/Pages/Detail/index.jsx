@@ -13,7 +13,7 @@ const Detail = (props) => {
     const [data,setData] = useState(null);
     
     const handleFavorite = (id) =>{
-        
+
         const index = coms.findIndex(
             comic => {
                 return comic.id === character*1;
@@ -42,7 +42,7 @@ const Detail = (props) => {
             }
         ))
 
-    },[coms])
+    },[coms,character])
 
     return (
         <>
@@ -59,7 +59,7 @@ const Detail = (props) => {
                             <hr />
                         </div>
                         <div className="col-12 col-md-4 d-flex">
-                            {data?.thumb && <img className="w-100" src={data?.thumb}></img>}
+                            {data?.thumb && <img className="w-100" src={data?.thumb} alt="Comic description"></img>}
                         </div>
                         <div className="col-12 col-md-8 ">
                             <h2 className="text-center">Details del comic</h2>

@@ -8,7 +8,7 @@ import { ComicContext } from "../../../Context/ComicsContext.jsx";
 import { useContext } from "react";
 
 const Login = (props) => {
-    const { user, isLogin, isLoading, updateLogin, updateUser} = useContext(ComicContext);
+    const {isLogin, updateLogin, updateUser} = useContext(ComicContext);
     const navigate = useNavigate();
     const [userName, setuserName] = useState("");
     const [password, setPassword] = useState("");
@@ -24,7 +24,6 @@ const Login = (props) => {
     useEffect(() => {
 
         if (isLogin ) {
-            console.log("navigagte to /");
             navigate("/")
          }
     }, [isLogin]);

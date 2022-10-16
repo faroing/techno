@@ -61,7 +61,7 @@ const Comics = (props) => {
                             </Card.Text>
                             <hr />
                             <div className="text-center d-flex justify-content-between">
-                                <Link className="btn btn-dark" to={`detail/${item.id}`}>Ver mas</Link>
+                                <Link className="btn btn-dark" to={`/detail/${item.id}`}>Ver mas</Link>
                                 
                                 {props?.personal&&<Button className={"btn btn-danger"}
                                     onClick={()=>{
