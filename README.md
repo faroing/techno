@@ -38,6 +38,25 @@ Demostrar conocimientos  referentes al desarrollo web, uso de estilos maquetaci�
 
 You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
 
+
+# Manual de instalación y despliegue
+
+
+- Revisar los componentes de Routing y configurar Lazyload y optimización para las rutas de los componentes de Página
+
+- Realizar el comando ¨npm run build¨ para generarl los archivos optimizados del aplicativo
+
+- Configurar un servidor en nginx o apache o alguno similar, no es necesario tener tecnologías de lado del servidor como php o dijano
+
+- Se deben configurar los registros “A CNAME” para los nombres de dominio a utilizar
+
+- Se debe subir la archivos contenidos en la carpeta configurada del servidor web
+
+## Contacto
+<img  target="_blank"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"  width="100">
+
+(www.linkedin.com/in/faroing)
+=======
 ## Contacto
 <img  target="_blank"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"  width="100">
 
