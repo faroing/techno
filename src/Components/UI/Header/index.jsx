@@ -39,9 +39,7 @@ const Header = (props) => {
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
                   {isLogin && <>
-                    <Nav.Link >
-                      Bienvenido {user?.name}
-                    </Nav.Link>
+                    
                     <LinkContainer to="/mis-comics">
                       <Nav.Link>
                         Mis Comics
@@ -64,6 +62,9 @@ const Header = (props) => {
                   }
 
                   {isLogin && <>
+                    <Nav.Link >
+                      Bienvenido {user?.name} | 
+                    </Nav.Link >
                     <Nav.Link onClick={handleLogOut}>
                       Salir
                     </Nav.Link>
