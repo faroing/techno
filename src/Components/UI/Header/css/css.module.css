@@ -1,0 +1,67 @@
+
+@import url("../../../../Assets/css/variables.css");
+
+header{
+    background-color: var(--main-bg-color);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    height: 80px;
+    color: var(--main-txt-color);
+    z-index: 1000;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid grey; */
+}
+/*
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav > *{
+    width: 33%;
+}
+
+header nav>*:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav>*:nth-child(3){
+    display: flex;
+    justify-content: right;
+}
+
+header nav ul li{
+    border: 1px solid #444;
+    margin: 5px;
+    padding: 3px 5px 3px 5px;
+    transition: border 0.7s;
+}
+
+header nav ul li:hover{
+    border: 1px solid white;
+    margin: 5px;
+    padding: 3px 5px 3px 5px;
+    transition: border 0.7s;
+
+}
+
+header nav ul li a{
+   height: 100%;
+   width: 100%;
+  
+}
+
+header nav ul li a:visited{
+    text-decoration: none;
+    
+}
+*/
+
+

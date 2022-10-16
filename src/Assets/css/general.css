@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@500&display=swap');
+
+:root{
+    --bs-link-color:white;
+    --bs-link-hover-color:white;
+    --bs-link-visited-color: lightgray;
+    --bs-link-disabled-color: #6c757d;
+}
+*{
+    font-family: 'Noto Sans Ethiopic', sans-serif;
+}
+
+body{
+    padding-top: 90px;
+    padding-bottom: 80px;
+    color:black;
+    /* background-color: black; */
+}
+a{
+    text-decoration:none;
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+    
+}
+
+.color-black {
+    color:black;
+}
+
+.color-white{
+    color:white;
+}
+
+/* 
+a{
+    color: white;
+
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: white;
+}
+
+
+
+a:visited{
+    color: lightgray;
+}
+ */

@@ -1,0 +1,12 @@
+.loading{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color:white;
+    left: 0px;
+    top:0px;
+    right: 0px;
+    bottom: 0px;
+}
