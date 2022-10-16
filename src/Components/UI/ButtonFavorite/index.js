@@ -1,18 +1,14 @@
-import { useState } from "react";
 import { BsFillEmojiHeartEyesFill } from 'react-icons/bs';
 import Button from "react-bootstrap/Button";
 
 function ButtonFavorite(props) {
-
-    const [isInList, setIsInList] = useState(props.isInList);
     
-    const checkInList = (value) => {
-        setIsInList(value)
+    const handleFavorite = () =>{
+        props.onFavorite(props.id);
     }
 
     return (
-        <Button id={props.id} variant={isInList ? "success" : "danger"} onClick={props.onClick()}><BsFillEmojiHeartEyesFill /></Button>
-
+        <Button variant={props.favorite ? "success" : "danger"} onClick={handleFavorite}><BsFillEmojiHeartEyesFill /></Button>
     );
 }
 

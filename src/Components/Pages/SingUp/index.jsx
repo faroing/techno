@@ -3,8 +3,13 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { ComicContext } from "../../../Context/ComicsContext";
+import { useContext } from "react";
 
-const SingIn = (props) => {
+const SingUp = (props) => {
+
+    const {updateUser,updateLogin} = useContext(ComicContext);
+    
     const navigate = useNavigate();
     const [name, setName] = useState("");
     const [nip, setNip] = useState("");
@@ -90,6 +95,9 @@ const SingIn = (props) => {
         if (errorPassword === "" && errorUser === "" && errorNip === "" && errorName === "") {
 
             localStorage.setItem("users", JSON.stringify([...users, {name:name,nip:nip, userName: userName, password: password }]));
+            localStorage.setItem("user", JSON.stringify({name:name,nip:nip, userName: userName, password: password }));
+            updateLogin(true);
+            updateUser({name:name,nip:nip, userName: userName, password: password });
             navigate("/");
 
         }
@@ -182,4 +190,4 @@ const SingIn = (props) => {
     );
 }
 
-export default SingIn;
+export default SingUp;

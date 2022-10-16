@@ -1,26 +1,33 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-import Login from '../Components/Pages/Login';
 import Welcome from '../Components/Pages/Welcome';
+import Login from '../Components/Pages/Login';
+import SingUp from '../Components/Pages/SingUp';
+import { ComicContext } from '../Context/ComicsContext';
+import { useContext } from 'react';
+import Comics from '../Components/Pages/Comics';
 // import Comics from '../Pages/Comics';
 // import MisComics from '../Pages/MisComics';
-// import SingUp from '../Pages/SingUp';
-// import NotFound from '../Pages/NotFound';
-// import Detail from '../Pages/Detail';
-const Routing = (props) => {
 
+// import NotFound from '../Pages/NotFound';
+import Detail from '../Components/Pages/Detail';
+import NotFound from '../Components/Pages/NotFound';
+
+const Routing = (props) => {
+    const {isLogin} = useContext(ComicContext);
+    
+    
     return (
         <>
             <Routes>
-                <Route index element={<Welcome />}></Route>
+                <Route index element={isLogin?<Comics></Comics>:<Welcome />}></Route>
                 <Route path='/login' element={<Login />}></Route>
-                {/* <Route index element={<Comics />}></Route>
-                <Route path="/mis-comics" element={<MisComics />}> </Route>
-                <Route path="/login" element={<Login />}></Route>
                 <Route path="/SingUp" element={<SingUp />}></Route>
                 <Route path="/detail" >
                     <Route path=":character" element={<Detail />}></Route>
                 </Route>
-                <Route path="*" element={<NotFound />}></Route> */}
+                <Route path="*" element={<NotFound />}></Route>
+                <Route path="/mis-comics" element={<Comics personal={true} />}> </Route>
+                
             </Routes>
         </>
     )
