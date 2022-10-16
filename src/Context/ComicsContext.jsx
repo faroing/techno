@@ -10,10 +10,8 @@ export const ComicContext = React.createContext(
         user: []
     });
 
-const CREDENTIALS = '?ts=1&apikey=15c6de32e84b808e3431f6be93256369&hash=ab402b98b5a49b0900f5cb56a3954c40';
-const API_URL = 'https://gateway.marvel.com:443/v1/public/comics'
 
-export default props => {
+export default (props) => {
 
     const [comicsList, setComicsList] = useState([]);
     const [coms, setComs] = useState([]);
