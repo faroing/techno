@@ -47,6 +47,18 @@ Demostrar conocimientos  referentes al desarrollo web, uso de estilos maquetaci�
 
 - Se debe subir la archivos contenidos en la carpeta configurada del servidor web
 
+
+
+# Manual de usuario
+
+## aqui encontraras los pasos para usar la aplicación
+
+![login imagen](https://github.com/faroing/techno/blob/main/images/login1.png){width=100% height=auto}
+
+- Ingresa los datos correctos para ingresar al sistema, si no tienes un usuario registrado ingresa a la opción "Registrarce"
+
+
+
 ## Contacto
 
 <img  target="_blank"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"  width="100">
